@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+<center>
+    <div style="width:12cm; text-align:left;">
+        <div class="form-control">
+            <form action="" method='POST'>
+                {{ form.hidden_tag() }}
+
+                <div class="form-group">
+                    {{ form.fname.label(class="form-group") }}
+                    {{ form.fname(class="form-control") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.lname.label(class="form-group") }}
+                    {{ form.lname(class="form-control") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.phone.label(class="form-group") }}
+                    {{ form.phone(class="form-control") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.email.label(class="form-group") }}
+                    {{ form.email(class="form-control") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.username.label(class="form-group") }}
+                    {{ form.username(class="form-control") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.password.label(class="form-group") }}
+                    {{ form.password(class="form-control") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.confirmpassword.label(class="form-group") }}
+                    {{ form.confirmpassword(class="form-control") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.submit(class="btn btn-primary") }}
+                </div>
+
+            </form>
+        </div>
+    </div>
+</center>
+
+{% endblock body %}

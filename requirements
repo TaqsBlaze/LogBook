@@ -1,0 +1,11 @@
+flask
+wtforms
+flask-bcrypt
+cryptography
+flask-migrate
+flask-login
+flask-wtf
+wtform
+sqlalchemy <= 1.4
+mysql-connector
+Pillow >= 9.0
